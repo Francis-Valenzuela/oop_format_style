@@ -15,3 +15,8 @@ class NumberSeperator:
 
                     if cleaned_line:
                         integer_num = int(cleaned_line)
+
+                    if integer_num % 2 == 0:
+                        even_output_file.write(str(integer_num) + "\n")
+                    else:
+                        odd_output_file.write(str(integer_num) + "\n")
