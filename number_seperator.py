@@ -12,3 +12,6 @@ class NumberSeperator:
 
                for line in numbers_per_lines:
                    cleaned_line = line.strip()
+
+                    if cleaned_line:
+                        integer_num = int(cleaned_line)
