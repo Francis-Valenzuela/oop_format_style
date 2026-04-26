@@ -7,7 +7,7 @@ def find_highest_gwa(file_name):
             for line in file:
                 line = line.strip()
 
-                name, gwa = line.split(', ')
+                name, gwa = line.split('-')
                 name = name.strip().title()
                 gwa = float(gwa.strip())
 
@@ -21,7 +21,7 @@ def find_highest_gwa(file_name):
     except ValueError:
         print('Invalid file Format')
 
-                    
+
 
 
 
