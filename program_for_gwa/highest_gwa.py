@@ -6,3 +6,10 @@ def find_highest_gwa(file_name):
         with open(file_name, 'r') as file:
             for line in file:
                 line = line.strip()
+
+                name, gwa = line.split(', ')
+                name = name.strip().title()
+                gwa = float(gwa.strip())
+
+
+
