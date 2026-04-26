@@ -8,4 +8,5 @@ class NumberProcessor :
 
             for num in number :
                 num = num.strip()
+                num = int(num)
 
