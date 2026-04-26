@@ -14,6 +14,13 @@ def find_highest_gwa(file_name):
                 if gwa < highest_gwa:
                     highest_gwa = gwa
                     name_with_highest_gwa = name
+
+            print(f'Student with the highest GWA: {name_with_highest_gwa} - {highest_gwa}')
+    except FileNotFoundError:
+        print('File not found')
+    except ValueError:
+        print('Invalid file Format')
+
                     
 
 
