@@ -9,4 +9,10 @@ class NumberProcessor :
             for num in number :
                 num = num.strip()
                 num = int(num)
+        with open(double_number, 'w') as double_numbers_file :
+            with open(triple_number, 'w') as triple_numbers_file :
+                if num % 2 == 0
+                    double_numbers_file.write(str(num ** 2) + '\n')
+                else:
+                    triple_numbers_file.write(str(num ** 3) + '\n')
 
