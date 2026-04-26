@@ -2,7 +2,8 @@ class TextFileWriter:
     def __init__(self, filename):
         self.filename = filename
 
-        def w_lines(self):
+    def w_lines(self):
+        try:
             with open(self.filename, 'w') as file:
                 while True:
                     line = input("Enter a line to write: ")
@@ -12,3 +13,5 @@ class TextFileWriter:
                     if choice != 'y':
                         break
 
+        except ValueError:
+            print("Invalid Value")
