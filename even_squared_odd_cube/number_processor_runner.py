@@ -1,5 +1,8 @@
 from number_processor import NumberProcessor
 
 def main():
-    number_processor = NumberProcessor('integers.txt')
-    number_processor.process_numbers('double.txt', 'triple.txt')
+    new_number = NumberProcessor('integers.txt')
+    new_number.process_numbers('double.txt', 'triple.txt')
+
+if __name__ == '__main__':
+    main()
