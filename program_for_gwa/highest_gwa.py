@@ -11,5 +11,10 @@ def find_highest_gwa(file_name):
                 name = name.strip().title()
                 gwa = float(gwa.strip())
 
+                if gwa < highest_gwa:
+                    highest_gwa = gwa
+                    name_with_highest_gwa = name
+                    
+
 
 
