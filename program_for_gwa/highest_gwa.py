@@ -1,3 +1,8 @@
 def find_highest_gwa(file_name):
     name_with_highest_gwa = ''
     highest_gwa = float('inf')
+
+    try:
+        with open(file_name, 'r') as file:
+            for line in file:
+                line = line.strip()
