@@ -10,8 +10,10 @@ class TextFileWriter:
                     file.write(line + '\n')
 
                     choice = input("Would you like to add another line? (y/n): ").lower()
-                    if choice != 'y':
-                        break
+                    if choice not in ['y', 'n']:
+                        print("Please enter 'y' or 'n'")
+                        if choice != 'y':
+                            break
 
         except ValueError:
             print("Invalid Value")
